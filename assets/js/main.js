@@ -8,5 +8,9 @@ $(document).ready(function(){
 		attribution: '<a href="#">Pharmalogy</a> &copy; 2021',
 		maxZoom: 18,
 	}).addTo(mainMap)
+	// set locate me button
+	L.control.locate({
+		flyTo: true
+	}).addTo(mainMap);
 
 });

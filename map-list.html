@@ -10,20 +10,22 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
 
     <!-- All CSS -->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/magnafic-popup.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/odometer.css"> -->
+
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css"> <!-- side menu -->
     <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/magnafic-popup.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
 	<!-- Leaflet CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.css" />
 
 	<!-- App title -->
     <title>Pharmalogy</title>
@@ -224,10 +226,6 @@
 				</div>
 			</div>
 
-			<div class="side-map mt-20 mb-30">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29176.030811137334!2d90.3883827!3d23.924917699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1605272373598!5m2!1sen!2sbd"></iframe>
-			</div>
-
 			<div class="contact-infos mt-30 mb-30">
 				<div class="contact-list mb-30">
 					<div class="sidebar__menu--social">
@@ -277,312 +275,166 @@
 						<div id="main-map" class="map-full-height w-100"></div>
 					</div>
 
-					<div class="col-xl-5 pt-75 pb-20 pl-50 pr-50">
-						<div class="">
-							<div class="sidebar-widget pb-17">
-								<div class="contact-filter">
-									<h4 class="widget-title">Search by filter</h4>
-									<div class="find-form">
-										<form action="#">
-											<div class="row row-2">
-												<div class="col-xl-5">
-													<div class="form-group">
-														<input type="text" placeholder="Pharmacy name ?">
-													</div>
+					<div class="col-xl-5 pt-75 pb-10 pl-50 pr-50">
+						<!-- filter -->
+						<div class="sidebar-widget pb-17">
+							<div class="contact-filter">
+								<h4 class="widget-title">Search by filter</h4>
+								<div class="find-form">
+									<form action="#">
+										<div class="row row-2">
+											<div class="col-xl-5">
+												<div class="form-group">
+													<input type="text" placeholder="Pharmacy name ?">
 												</div>
-												<div class="col-xl-4">
-													<div class="location-input">
-														<div class="form-group">
-															<input type="text" placeholder="Locations">
-														</div>
-													</div>
-												</div>
-												<div class="col-xl-3">
+											</div>
+											<div class="col-xl-4">
+												<div class="location-input">
 													<div class="form-group">
-														<div class="has-select">
-															<select name="price" id="price">
-																<option value="1">Status</option>
-																<option value="1">Opened</option>
-																<option value="1">In Gard</option>
-																<option value="1">Closed</option>
-															</select>
-														</div>
+														<input type="text" placeholder="Locations">
 													</div>
 												</div>
 											</div>
-										</form>
-									</div>
-								</div>
-								<!-- /. contact filter -->
-							</div>
-							<div class="search-result">
-								<div class="d-flex justify-content-between mb-30 search-flex-wrap">
-									<div class="search-result-top search-top-2  d-flex align-items-center">
-										<nav>
-											<div class="nav custom-tab" id="nav-tab" role="tablist">
-											<a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-th-large"></i></a>
-											<a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-th-list"></i></a>
-											</div>
-										</nav>
-										<span>Found 30+ Pharmacies</span>
-									</div>
-								</div>
-								<!-- /. search result top -->
-								<div class="search-result-bottom">
-									<div class="tab-content" id="pills-tabContent">
-										<div class="tab-pane fade " id="nav-home" role="tabpanel">
-											<div class="row">
-												<div class="col-xl-6 col-lg-6 col-md-6">
-													<div class="featured-wrap-3 mb-30 style-2 mb-30">
-														<div class="thumb">
-															<img src="assets/img/grid/g-img-1.jpg" alt="thumb">
-															<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="content content-update sm-padding">
-															<div class="buttons btn-pos-2">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="author-info author-info-2">
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Silver Rose Store <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="extra-info extra-info-update">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6">
-													<div class="featured-wrap-3 mb-30 style-2 mb-30">
-														<div class="thumb">
-															<img src="assets/img/grid/g-img-2.jpg" alt="thumb">
-															<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="content content-update sm-padding">
-															<div class="buttons btn-pos-2">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="author-info author-info-2">
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Silver Rose Store <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="extra-info extra-info-update">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6">
-													<div class="featured-wrap-3 mb-30 style-2 mb-30">
-														<div class="thumb">
-															<img src="assets/img/grid/g-img-3.jpg" alt="thumb">
-															<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="content content-update sm-padding">
-															<div class="buttons btn-pos-2">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="author-info author-info-2">
-																<div class="text">
-																	<h5>
-																		<a href="news.html">John Max <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="extra-info extra-info-update">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6">
-													<div class="featured-wrap-3 mb-30 style-2 mb-30">
-														<div class="thumb">
-															<img src="assets/img/grid/g-img-4.jpg" alt="thumb">
-															<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="content content-update sm-padding">
-															<div class="buttons btn-pos-2">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="author-info author-info-2">
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Charli puth<i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="extra-info extra-info-update">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6">
-													<div class="featured-wrap-3 mb-30 style-2 mb-30">
-														<div class="thumb">
-															<img src="assets/img/grid/g-img-6.jpg" alt="thumb">
-															<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="content content-update sm-padding">
-															<div class="buttons btn-pos-2">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="author-info author-info-2">
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Alex scott <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="extra-info extra-info-update">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="col-xl-6 col-lg-6 col-md-6">
-													<div class="featured-wrap-3 mb-30 style-2 mb-30">
-														<div class="thumb">
-															<img src="assets/img/grid/g-img-12.jpg" alt="thumb">
-															<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="content content-update sm-padding">
-															<div class="buttons btn-pos-2">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="author-info author-info-2">
-																<div class="text">
-																	<h5>
-																		<a href="news.html">John Max <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="extra-info extra-info-update">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
-															</div>
-														</div>
+											<div class="col-xl-3">
+												<div class="form-group">
+													<div class="has-select">
+														<select name="status" id="status">
+															<option value="0">Status</option>
+															<option value="1">All</option>
+															<option value="2">Opened</option>
+															<option value="3">In Gard</option>
+														</select>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="tab-pane fade show active" id="nav-profile" role="tabpanel">
-											<div class="row">
-												<div class="col-xl-12 col-lg-9">
-													<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-														<div class="thumb">
-															<img src="assets/img/blog/list-img-1.jpg" alt="thumb">
-															<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="listing-content">
-															<div class="listing-btn pos-abs tb-center f-flex-column">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="l-author-info l-flex has-border-bottom">
-																<div class="image-2">
-																	<img src="assets/img/author/author-1.jpg" alt="author">
-																</div>
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="listing-info pb-0">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-													<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-														<div class="thumb">
-															<img src="assets/img/blog/list-img-2.jpg" alt="thumb">
-															<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="listing-content">
-															<div class="listing-btn pos-abs tb-center f-flex-column">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="l-author-info l-flex has-border-bottom">
-																<div class="image-2">
-																	<img src="assets/img/author2/author1.png" alt="author">
-																</div>
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Fluid Max John <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="listing-info pb-0">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-													<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-														<div class="thumb">
-															<img src="assets/img/blog/list-img-3.jpg" alt="thumb">
-															<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-														</div>
-														<div class="listing-content">
-															<div class="listing-btn pos-abs tb-center f-flex-column">
-																<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-																<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-															</div>
-															<div class="l-author-info l-flex has-border-bottom">
-																<div class="image-2">
-																	<img src="assets/img/author2/author2.png" alt="author">
-																</div>
-																<div class="text">
-																	<h5>
-																		<a href="news.html">Silver Rose Store <i class="fal fa-check-circle"></i></a>
-																	</h5>
-																	<p>Lorem ipsum is dolor</p>
-																</div>
-															</div>
-															<div class="listing-info pb-0">
-																<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-																<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
+									</form>
 								</div>
-								<!-- /. search result bottom -->
 							</div>
-							<!-- /. search-result -->
+							<!-- /. contact filter -->
 						</div>
+
+						<div class="search-result">
+							<!-- /. search result top -->
+							<div class="search-result-bottom">
+								<div class="row">
+									<div class="col-12">
+										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
+											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
+												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
+											</div>
+											<div class="listing-content">
+												<div class="listing-btn pos-abs tb-center f-flex-column">
+													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
+													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
+												</div>
+												<div class="l-author-info l-flex has-border-bottom">
+													<div class="image-2">
+														<img src="assets/img/author/author-1.jpg" alt="author">
+													</div>
+													<div class="text">
+														<h5>
+															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
+														</h5>
+														<p>Lorem ipsum is dolor</p>
+													</div>
+												</div>
+												<div class="listing-info pb-0">
+													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
+													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
+											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
+												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
+											</div>
+											<div class="listing-content">
+												<div class="listing-btn pos-abs tb-center f-flex-column">
+													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
+													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
+												</div>
+												<div class="l-author-info l-flex has-border-bottom">
+													<div class="image-2">
+														<img src="assets/img/author/author-1.jpg" alt="author">
+													</div>
+													<div class="text">
+														<h5>
+															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
+														</h5>
+														<p>Lorem ipsum is dolor</p>
+													</div>
+												</div>
+												<div class="listing-info pb-0">
+													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
+													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
+											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
+												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
+											</div>
+											<div class="listing-content">
+												<div class="listing-btn pos-abs tb-center f-flex-column">
+													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
+													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
+												</div>
+												<div class="l-author-info l-flex has-border-bottom">
+													<div class="image-2">
+														<img src="assets/img/author/author-1.jpg" alt="author">
+													</div>
+													<div class="text">
+														<h5>
+															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
+														</h5>
+														<p>Lorem ipsum is dolor</p>
+													</div>
+												</div>
+												<div class="listing-info pb-0">
+													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
+													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
+											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
+												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
+											</div>
+											<div class="listing-content">
+												<div class="listing-btn pos-abs tb-center f-flex-column">
+													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
+													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
+												</div>
+												<div class="l-author-info l-flex has-border-bottom">
+													<div class="image-2">
+														<img src="assets/img/author/author-1.jpg" alt="author">
+													</div>
+													<div class="text">
+														<h5>
+															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
+														</h5>
+														<p>Lorem ipsum is dolor</p>
+													</div>
+												</div>
+												<div class="listing-info pb-0">
+													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
+													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /. search result bottom -->
+						</div>
+						<!-- /. search-result -->
 					</div>
 				</div>
 			</div>
@@ -680,24 +532,26 @@
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<!-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+	<!-- <script src="assets/js/popper.min.js"></script> -->
+	<!-- <script src="assets/js/imagesloaded.pkgd.min.js"></script> -->
+	<!-- <script src="assets/js/magnafic.popup.min.js"></script> -->
+	<!-- <script src="assets/js/isotope.pkgd.min.js"></script> -->
+	<!-- <script src="assets/js/jquery.appear.js"></script> -->
+	<!-- <script src="assets/js/odometer.min.js"></script> -->
+
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
-	<script src="assets/js/meanmenu.min.js"></script>
-	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/meanmenu.min.js"></script> <!-- side menu -->
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/slick.min.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="assets/js/magnafic.popup.min.js"></script>
 	<script src="assets/js/back-to-top.min.js"></script>
-	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<script src="assets/js/jquery.appear.js"></script>
 	<script src="assets/js/magnafic.popup.min.js"></script>
-	<script src="assets/js/odometer.min.js"></script>
 	<script src="assets/js/nice-select.min.js"></script>
 	<script src="assets/js/script.js"></script>
 
 	<!-- Leaflet JS -->
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.js"></script>
 	<!-- main script -->
 	<script src="assets/js/main.js"></script>
 
