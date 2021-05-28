@@ -23,9 +23,14 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 	<!-- Leaflet CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
 
 	<!-- App title -->
     <title>Pharmalogy</title>
@@ -53,7 +58,10 @@
 						<div class="header-info-wrap">
 							<div class="header-info">
 								<span>Support:</span>
-								<a href=""><span class="__cf_email__" data-cfemail="9ff6f1f9f0dfe8fafdf2fef6f3b1fcf0f2">support@pharmalogy.tk</span></a>
+								<a href="https://themepure.net/cdn-cgi/l/email-protection#147d7a727b5463717679757d783a777b79"><span class="__cf_email__" data-cfemail="9ff6f1f9f0dfe8fafdf2fef6f3b1fcf0f2">[email&#160;protected]</span></a>
+							</div>
+							<div class="header-info">
+								<a href="sign-in.html"><i class="far fa-user"></i> Login Now</a>
 							</div>
 						</div>
 					</div>
@@ -61,6 +69,8 @@
 						<div class="header-social">
 							<a href="#"><i class="fab fa-facebook-f"></i></a>
 							<a href="#"><i class="fab fa-twitter"></i></a>
+							<a href="#"><i class="fab fa-behance"></i></a>
+							<a href="#"><i class="fab fa-youtube"></i></a>
 							<a href="#"><i class="fab fa-linkedin-in"></i></a>
 						</div>
 					</div>
@@ -140,11 +150,16 @@
 							</div>
 						</div>
 						<div class="d-inline-block ">
+							<div class="header-btn">
+								<a href="listing-details.html">
+									Add Listing <i class="far fa-plus"></i>
+								</a>
+							</div>
 							<div class="sidebar-open open-mobile-menu ml-20 d-none d-lg-inline-block">
 								<a href="javascript:void(0)">
 									<svg xmlns="http://www.w3.org/2000/svg" width="23px" height="24px">
 										<path fill-rule="evenodd" fill="rgb(24, 27, 29)"
-											d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
+											  d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
 									</svg>
 								</a>
 							</div>
@@ -152,7 +167,7 @@
 								<a href="javascript:void(0)">
 									<svg xmlns="http://www.w3.org/2000/svg" width="23px" height="24px">
 										<path fill-rule="evenodd" fill="rgb(24, 27, 29)"
-											d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
+											  d="M22.375,12.635 L8.250,12.635 C7.905,12.635 7.625,12.350 7.625,12.000 C7.625,11.649 7.905,11.365 8.250,11.365 L22.375,11.365 C22.720,11.365 23.000,11.649 23.000,12.000 C23.000,12.350 22.720,12.635 22.375,12.635 ZM22.375,3.746 L8.250,3.746 C7.905,3.746 7.625,3.461 7.625,3.111 C7.625,2.760 7.905,2.476 8.250,2.476 L22.375,2.476 C22.720,2.476 23.000,2.760 23.000,3.111 C23.000,3.461 22.720,3.746 22.375,3.746 ZM3.062,24.000 C1.371,24.000 0.000,22.607 0.000,20.888 C0.000,19.170 1.371,17.777 3.062,17.777 C4.754,17.777 6.125,19.170 6.125,20.888 C6.125,22.607 4.754,24.000 3.062,24.000 ZM3.062,19.047 C2.061,19.047 1.250,19.872 1.250,20.888 C1.250,21.905 2.061,22.730 3.062,22.730 C4.063,22.730 4.875,21.905 4.875,20.888 C4.875,19.872 4.063,19.047 3.062,19.047 ZM3.062,15.111 C1.371,15.111 0.000,13.718 0.000,12.000 C0.000,10.282 1.371,8.888 3.062,8.888 C4.754,8.888 6.125,10.282 6.125,12.000 C6.125,13.718 4.754,15.111 3.062,15.111 ZM3.062,10.159 C2.061,10.159 1.250,10.983 1.250,12.000 C1.250,13.017 2.061,13.841 3.062,13.841 C4.063,13.841 4.875,13.017 4.875,12.000 C4.875,10.983 4.063,10.159 3.062,10.159 ZM3.062,6.222 C1.371,6.222 0.000,4.829 0.000,3.111 C0.000,1.393 1.371,-0.000 3.062,-0.000 C4.754,-0.000 6.125,1.393 6.125,3.111 C6.125,4.829 4.754,6.222 3.062,6.222 ZM3.062,1.270 C2.061,1.270 1.250,2.094 1.250,3.111 C1.250,4.128 2.061,4.952 3.062,4.952 C4.063,4.952 4.875,4.128 4.875,3.111 C4.875,2.094 4.063,1.270 3.062,1.270 ZM8.250,20.254 L22.375,20.254 C22.720,20.254 23.000,20.538 23.000,20.888 C23.000,21.239 22.720,21.524 22.375,21.524 L8.250,21.524 C7.905,21.524 7.625,21.239 7.625,20.888 C7.625,20.538 7.905,20.254 8.250,20.254 Z"/>
 									</svg>
 								</a>
 							</div>
@@ -275,7 +290,7 @@
 						<div id="main-map" class="map-full-height w-100"></div>
 					</div>
 
-					<div class="col-xl-5 pt-75 pb-10 pl-50 pr-50">
+					<div class="col-xl-5 pt-50 pb-10 pl-50 pr-50">
 						<!-- filter -->
 						<div class="sidebar-widget pb-17">
 							<div class="contact-filter">
@@ -314,127 +329,32 @@
 							<!-- /. contact filter -->
 						</div>
 
-						<div class="search-result">
-							<!-- /. search result top -->
-							<div class="search-result-bottom">
-								<div class="row">
-									<div class="col-12">
-										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
-												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-											</div>
-											<div class="listing-content">
-												<div class="listing-btn pos-abs tb-center f-flex-column">
-													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-												</div>
-												<div class="l-author-info l-flex has-border-bottom">
-													<div class="image-2">
-														<img src="assets/img/author/author-1.jpg" alt="author">
-													</div>
-													<div class="text">
-														<h5>
-															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
-														</h5>
-														<p>Lorem ipsum is dolor</p>
-													</div>
-												</div>
-												<div class="listing-info pb-0">
-													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-												</div>
-											</div>
-										</div>
+						<div id="search-results-container" class="search-result active">
+                            <div class="d-flex justify-content-between mb-30 search-flex-wrap">
+                                <div class="search-result-top search-top-2  d-flex align-items-center">
+                                    <span>Found 30+ Restaurants</span>
+                                </div>
+                            </div>
+                            <!-- /. search result top -->
+                            <div class="search-result-content">
+								<div id="pharmacies-loading" class="loading">
+									<div id="loading-center-absolute">
+										<div class="object" id="object_four"></div>
+										<div class="object" id="object_three"></div>
+										<div class="object" id="object_two"></div>
+										<div class="object" id="object_one"></div>
 									</div>
-									<div class="col-12">
-										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
-												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-											</div>
-											<div class="listing-content">
-												<div class="listing-btn pos-abs tb-center f-flex-column">
-													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-												</div>
-												<div class="l-author-info l-flex has-border-bottom">
-													<div class="image-2">
-														<img src="assets/img/author/author-1.jpg" alt="author">
-													</div>
-													<div class="text">
-														<h5>
-															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
-														</h5>
-														<p>Lorem ipsum is dolor</p>
-													</div>
-												</div>
-												<div class="listing-info pb-0">
-													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
-												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-											</div>
-											<div class="listing-content">
-												<div class="listing-btn pos-abs tb-center f-flex-column">
-													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-												</div>
-												<div class="l-author-info l-flex has-border-bottom">
-													<div class="image-2">
-														<img src="assets/img/author/author-1.jpg" alt="author">
-													</div>
-													<div class="text">
-														<h5>
-															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
-														</h5>
-														<p>Lorem ipsum is dolor</p>
-													</div>
-												</div>
-												<div class="listing-info pb-0">
-													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="feature-list-2 d-sm-flex mb-30 feature-map-space">
-											<div class="thumb" bg-img="assets/img/blog/list-img-1.jpg">
-												<span class="rating-2"><i class="fal fa-heart"></i> 4.8</span>
-											</div>
-											<div class="listing-content">
-												<div class="listing-btn pos-abs tb-center f-flex-column">
-													<a href="listing-details.html" class="wishlist-btn"><i class="fal fa-heart"></i></a>
-													<a href="listing-details.html" class="cart-btn"><i class="fal fa-shopping-bag"></i></a>
-												</div>
-												<div class="l-author-info l-flex has-border-bottom">
-													<div class="image-2">
-														<img src="assets/img/author/author-1.jpg" alt="author">
-													</div>
-													<div class="text">
-														<h5>
-															<a href="news.html">Dr. Strange<i class="fal fa-check-circle"></i></a>
-														</h5>
-														<p>Lorem ipsum is dolor</p>
-													</div>
-												</div>
-												<div class="listing-info pb-0">
-													<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
-													<span><i class="fal fa-phone-alt"></i> 92 666 888 0000</span>
-												</div>
-											</div>
-										</div>
+								</div>
+								<div class="pharmacies-splide splide">
+									<div class="splide__track">
+										<ul class="splide__list splide-container">
+										</ul>
 									</div>
 								</div>
 							</div>
-							<!-- /. search result bottom -->
-						</div>
-						<!-- /. search-result -->
+                            <!-- /. search result bottom -->
+                        </div>
+                        <!-- /. search-result -->
 					</div>
 				</div>
 			</div>
@@ -530,6 +450,33 @@
 		</div>
 	</footer>
 
+	<!-- template -->
+	<script id="pharmacy-template" type="text/template">
+		<li class="splide__slide slide-item">
+			<div class="featured-wrap-3 mb-30 style-2 mb-30">
+				<div class="thumb">
+					<img src="" alt="thumb">
+					<span class="rating  rating-2"><i class="fal fa-heart"></i> 4.8</span>
+				</div>
+				<div class="content content-update sm-padding">
+					<div class="buttons btn-pos-2">
+						<a class="wishlist-btn"><i class="fas fa-map-marker-alt"></i></a>
+					</div>
+					<div class="author-info author-info-2">
+						<div class="text">
+							<h5><span></span><i class="fal fa-check-circle"></i></h5>
+							<p>Lorem ipsum is dolor</p>
+						</div>
+					</div>
+					<div class="extra-info extra-info-update">
+						<span><i class="fal fa-map-marker-alt"></i> 80 Broklyn Street USA</span>
+						<span><i class="fal fa-phone"></i> 92 666 888 0000</span>
+					</div>
+				</div>
+			</div>
+		</li>
+	</script>
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<!-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
@@ -549,9 +496,12 @@
 	<script src="assets/js/nice-select.min.js"></script>
 	<script src="assets/js/script.js"></script>
 
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 	<!-- Leaflet JS -->
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.73.0/dist/L.Control.Locate.min.js"></script>
+	<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 	<!-- main script -->
 	<script src="assets/js/main.js"></script>
 

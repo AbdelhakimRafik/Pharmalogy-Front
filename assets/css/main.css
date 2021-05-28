@@ -3501,7 +3501,6 @@ a.f-btn.f-custom-btn {
 }
 
 .featured-wrap-3 {
-  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
   background: #fff;
   border-radius: 5px 5px 0 0;
 }
@@ -6998,16 +6997,16 @@ a.f-btn.f-custom-btn {
   height: 700px;
 }
 
+.map-left {
+	padding: 0;
+}
+
 .map-full-height {
-  height: 100%;
-  position: absolute;
-  margin-bottom: 40px;
-  left: 0;
-  top: 0;
+  height: 845px;
 }
 @media (max-width: 767px) {
   .map-full-height {
-    height: 350px;
+    height: 400px;
     position: static;
     margin-bottom: 65px;
   }
@@ -7016,14 +7015,14 @@ a.f-btn.f-custom-btn {
   .map-full-height {
     position: static;
     margin-bottom: 65px;
-    height: 400px;
+    height: 500px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .map-full-height {
     position: static;
     margin-bottom: 65px;
-    height: 350px;
+    height: 500px;
   }
 }
 .map-full-height iframe {
@@ -7197,6 +7196,10 @@ a.f-btn.f-custom-btn {
   font-weight: 700;
   font-size: 20px;
   color: #161c26;
+  display: none;
+}
+.search-result.active .search-result-top span {
+	display: block;
 }
 @media (max-width: 767px) {
   .search-result-top span {
@@ -7383,44 +7386,24 @@ a.f-btn.f-custom-btn {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-	.sidebar-widget {
-		margin-bottom: 35px;
-    	padding-bottom: 35px;
-	}
+  .sidebar-widget {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+  }
 }
-.search-result {
-	height: 70vh;
-}
-.search-result-bottom {
-	overflow-y: scroll;
-	height: 100%;
-	padding:0 5px;
-	overflow-x: hidden;
-}
-.search-result-bottom::-webkit-scrollbar {
-	width: 10px;
-}
-.search-result-bottom::-webkit-scrollbar-track {
-	background-color: #f4f4f4;
-}
-.search-result-bottom::-webkit-scrollbar-thumb {
-	background-color: #c1c1c1;
-}
+
 .search-flex {
   flex-wrap: wrap;
   grid-gap: 10px;
 }
+
 .feature-list-2 {
   align-items: center;
-  background-color: #f4f4f4;
-  border-radius: 10px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
 }
 .feature-list-2 .thumb {
   flex: 0 0 364px;
-  background: url("../img/blog/list-img-1.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px 0 0 10px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .feature-list-2 .thumb {
