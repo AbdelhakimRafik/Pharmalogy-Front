@@ -1,0 +1,1027 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700')
+
+/*----------------------------------------------------------------------------------------------------------------------
+ *Project:	    MyHouse
+ *Version:        1.0.1
+ *
+ *Default Color   #00f;
+ *
+ *Body copy:		'Roboto', sans-serif; 14px;
+ *Headers:		'Roboto', sans-serif;
+ *
+ *----------------------------------------------------------------------------------------------------------------------
+
+/*----------------------------------------------------------------------------------------------------------------------
+ *[Table of contents]
+ *
+ *A. Basic Styling
+ *  -- Styling
+ *
+ *B. Helpers
+ *
+ *  -- Animations
+ *  -- Borders
+ *  -- Center
+ *  -- Colors
+ *  -- Column-count
+ *  -- Background
+ *  -- File-upload
+ *  -- Height
+ *  -- No gutters
+ *  -- Opacity
+ *  -- Overflow
+ *  -- Position
+ *  -- Shadow
+ *  -- Typography
+ *  -- Title
+ *  -- Transitions
+ *  -- Utilities
+ *  -- Z-index
+ *
+ *C. Components
+ *
+ *  -- Badge
+ *  -- Block
+ *  -- Blockquote
+ *  -- Box
+ *  -- Buttons
+ *  -- Breadcrumb
+ *  -- Card
+ *  -- Carousel
+ *  -- Circle
+ *  -- Collapse
+ *  -- Description-list
+ *  -- Dropdown
+ *  -- Faq
+ *  -- Feature
+ *  -- Forms
+ *  -- Footer
+ *  -- Hr
+ *  -- Inputs
+ *  -- Item
+ *  -- List
+ *  -- Main
+ *  -- Map
+ *  -- Hero
+ *  -- Navbar
+ *  -- Page
+ *  -- Pagination
+ *  -- Partners
+ *  -- Person
+ *  -- Price-box
+ *  -- Result
+ *  -- Ribbon
+ *  -- Sidebar
+ *  -- Slider
+ *  -- Tabs
+ *  -- Quick-info
+ *
+ *D. Plugins Styles
+ *  -- Magnific Popup
+ *  -- Owl Carousel
+ *
+ *----------------------------------------------------------------------------------------------------------------------
+
+/***********************************************************************************************************************
+ *A. Basic Styling
+ ***********************************************************************************************************************
+
+/*-------------------------------------------
+ *  -- Styling - Colors, Font Size, Font Family
+ *-------------------------------------------
+
+body
+  background-color: #f6f6f6
+  color: #191919
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: .9375rem
+  margin: 0
+  padding: 0
+
+html
+  font-size: 95%
+
+h1
+  font-weight: 300
+  font-size: 1.875rem
+
+.ts-homepage h1
+  margin-top: 1rem
+
+h2
+  font-weight: 300
+  font-size: 1.75rem
+  margin-bottom: 1.5rem
+
+.h3
+  font-weight: 300
+  font-size: 1.5rem
+  line-height: 2rem
+  margin-bottom: 1rem
+  padding-bottom: .5rem
+
+h4
+  font-size: 1.125rem
+  font-weight: 400
+  line-height: 1.75rem
+  margin-bottom: 2rem
+
+h5, .h5
+  font-size: 1rem
+  font-weight: 600
+  line-height: 1.5rem
+
+/***********************************************************************************************************************
+ *B. Helpers
+ ***********************************************************************************************************************
+
+/* -- Animations
+
+/*-------------------------------------------
+ *  -- Borders
+ *-------------------------------------------
+
+/* Center Align with Flex
+
+.ts-text-color-light
+  color: rgba(0, 0, 0, 0.5)
+
+/* Bootstrap primary colors
+
+/*-------------------------------------------
+ *  -- Background
+ *-------------------------------------------
+
+[data-bg-image]
+  background-size: cover
+  background-position: 50%
+
+.ts-background
+  bottom: 0
+  left: 0
+  height: 100%
+  overflow: hidden
+  position: absolute
+  width: 100%
+  z-index: -2
+
+.ts-background-image
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50%
+  height: 100%
+  overflow: hidden
+  width: 100%
+
+header
+  opacity: 1
+
+.ts-bokeh-background
+  -webkit-filter: blur(1.875rem)
+  filter: blur(1.875rem)
+  top: -1rem
+  position: absolute
+  display: block
+  left: 0
+  width: 100%
+  height: 12rem
+  opacity: .6
+  overflow: hidden
+  z-index: -1
+
+  #ts-canvas
+    width: 100%
+
+/* -- File Upload
+
+/*-------------------------------------------
+ *  -- Height
+ *-------------------------------------------
+
+/* SM
+
+/*MD
+
+/*LG
+
+/*XL
+
+/*-------------------------------------------
+ *  -- No Gutters - Removes padding from col*
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Opacity
+ *-------------------------------------------
+
+.ts-opacity__50
+  opacity: .5
+
+/*-------------------------------------------
+ *  -- Overflow
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Position
+ *-------------------------------------------
+
+/* Top
+
+/* Right
+
+/* Bottom
+
+/* Left
+
+/*-------------------------------------------
+ *  -- Shadow
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Typography
+ *-------------------------------------------
+
+a
+  color: #191919
+  transition: .3s ease
+  outline: none
+
+  &:hover
+    color: #00f
+    text-decoration: none
+
+button
+  outline: none !important
+
+p
+  line-height: 1.5rem
+  color: rgba(0, 0, 0, 0.5)
+
+/*-------------------------------------------
+ *  -- Title
+ *-------------------------------------------
+
+.ts-title
+  padding-bottom: 1rem
+
+  h1
+    margin-bottom: 0
+
+/*
+ *margin-bottom: 3rem ?if media (min-width: 576px) and (max-width: 991px);
+ *margin-bottom: 4rem ?if media (min-width: 992px);
+
+/*-------------------------------------------
+ *  -- Utilities
+ *-------------------------------------------
+
+/* Social Icons
+
+/* Overlay
+
+/* Flip x
+
+/* Flip Y
+
+/*-------------------------------------------
+ *  -- Z-index
+ *-------------------------------------------
+
+/***********************************************************************************************************************
+ *C. Components
+ ***********************************************************************************************************************
+
+/* -- Badge
+
+/*-------------------------------------------
+ *  -- Block
+ *-------------------------------------------
+
+.ts-block
+  padding-bottom: 2rem
+  padding-top: 2rem
+  position: relative
+
+section
+  position: relative
+
+/*-------------------------------------------
+ *  -- Blockquote
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Box
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Buttons
+ *-------------------------------------------
+
+.btn
+  border-radius: .1875rem
+  border-width: .0625rem
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.15)
+  font-size: .9375rem
+  padding: .5rem 1.25rem
+  position: relative
+  outline: none !important
+
+button
+  cursor: pointer
+
+.ts-btn-arrow:after
+  content: "\f054"
+  font-family: "Font Awesome 5 Free"
+  font-weight: 900
+  font-size: .625rem
+  margin-left: .75rem
+  position: relative
+  top: -0.0625rem
+  vertical-align: middle
+
+.btn-primary
+  &:hover, &:focus, &:active
+    background-color: #00f
+    border-color: #00f
+    box-shadow: 0.125rem 0.1875rem 0.9375rem rgba(0, 0, 0, 0.3)
+
+  background-color: #00f
+  border-color: #00f
+  color: #fff
+
+  &:disabled
+    background-color: rgb(0, 0, 204)
+    border-color: rgb(0, 0, 204)
+
+  &:not(:disabled):not(.disabled)
+    &:active:focus, &.active:focus
+      background-color: rgb(0, 0, 204)
+      border-color: rgb(0, 0, 179)
+      box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2)
+
+    &:active, &.active
+      background-color: rgb(0, 0, 204)
+      border-color: rgb(0, 0, 204)
+      box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2)
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus
+  background-color: #00f
+  border-color: #00f
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.5)
+
+[class*="btn-outline-"]
+  box-shadow: none
+
+.btn-link
+  color: #00f
+
+  &:hover
+    color: #00f
+
+/* -- Breadcrumb
+
+.breadcrumb
+  background-color: transparent
+  margin-bottom: 1rem
+  padding: 0
+  font-size: .8125rem
+
+.breadcrumb-item
+  opacity: .5
+
+  &.active
+    color: #191919
+    opacity: 1
+
+  + .breadcrumb-item:before
+    content: "\f054"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    font-size: .625rem
+    opacity: .5
+
+/*-------------------------------------------
+ *  -- Card
+ *-------------------------------------------
+
+.card
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  border: none
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.15)
+  margin-bottom: 2rem
+
+.ts-card
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1)
+  border-radius: .1875rem
+  margin-bottom: 2rem
+  position: relative
+  transition: .3s ease
+  -webkit-transform: translateY(0)
+  transform: translateY(0)
+
+  &:hover
+    box-shadow: 0 0.3125rem 1.5625rem rgba(0, 0, 0, 0.25)
+    color: inherit
+    -webkit-transform: translateY(-0.3125rem)
+    transform: translateY(-0.3125rem)
+
+  .card-body
+    position: relative
+
+  .card-img
+    border-top-left-radius: .1875rem
+    border-top-right-radius: .1875rem
+    display: block
+    height: 15rem
+    position: relative
+    z-index: 1
+
+  .card-footer
+    background-color: #f6f6f6
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1)
+    padding: .5rem 1.25rem
+
+    .ts-btn-arrow
+      color: #191919
+      font-size: .6875rem
+      font-weight: 500
+      text-transform: uppercase
+
+      &:after
+        color: #00f
+
+  .ts-item__info-badge
+    background-color: #fff
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.15)
+    bottom: -0.75rem
+    border-radius: .1875rem
+    color: #191919
+    display: inline-block
+    left: 1.25rem
+    font-size: .75rem
+    font-weight: 500
+    position: absolute
+    padding: .25rem .5rem
+    z-index: 2
+
+/*-------------------------------------------
+ *  -- Circle
+ *-------------------------------------------
+
+.ts-circle__sm
+  border-radius: 50%
+  display: inline-block
+  height: 4.375rem
+  flex: 0 0 4.375rem
+  overflow: hidden
+  text-align: center
+  line-height: 4.375rem
+  width: 4.375rem
+
+/* -- Collapse
+
+/* -- Description List
+
+/* -- Dropdown
+
+/* -- FAQ
+
+/*-------------------------------------------
+ *  -- Forms
+ *-------------------------------------------
+
+/* -- Footer
+
+#ts-footer
+  background-color: #fff
+  box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.15)
+  margin-top: 7rem
+
+  address
+    line-height: 1.5rem
+
+  #ts-footer-main
+    padding-bottom: 4rem
+    padding-top: 4rem
+
+    nav
+      opacity: .5
+
+      .nav-link
+        padding-left: 0
+
+  #ts-footer-secondary
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1)
+    font-size: .8125rem
+    padding-bottom: 1rem
+    padding-top: 1rem
+
+    .container
+      justify-content: space-between
+      align-items: center
+
+  .brand
+    display: inline-block
+    margin-bottom: 1.875rem
+
+/*-------------------------------------------
+ *  -- HR
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Inputs
+ *-------------------------------------------
+
+/* -- Item
+
+@-moz-document url-prefix()
+
+/*-------------------------------------------
+ *  -- List
+ *-------------------------------------------
+
+ul
+  line-height: 2.625rem
+
+/* -- Main Content
+
+#ts-main
+  padding-top: 1rem
+
+.ts-homepage #ts-main
+  padding-top: 0
+
+/*-------------------------------------------
+ *  -- Map
+ *-------------------------------------------
+
+/* =====================================================================================================================
+ *MARKER
+
+/* =====================================================================================================================
+ *INFOBOX
+
+/*-------------------------------------------
+ *  -- Hero
+ *-------------------------------------------
+
+/* Hero slider height
+
+/*-------------------------------------------
+ *  -- Navbar
+ *-------------------------------------------
+
+#ts-header
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1)
+
+  &:not(.fixed-top)
+    z-index: 3
+    position: relative
+
+/*1st level
+
+ul.navbar-nav
+  margin-top: .5rem
+
+  .nav-item
+    position: relative
+    border-bottom: 0.0625rem solid rgba(25, 25, 25, 0.1)
+    transition: .3s ease
+
+  .nav-link
+    color: rgba(25, 25, 25, 0.5)
+
+    &:hover
+      color: rgba(25, 25, 25, 0.8)
+
+  > .nav-item
+    .nav-link
+      padding-left: .5rem
+      padding-bottom: 0
+      padding-top: 0
+
+    > .nav-link
+      margin-right: .5rem
+
+  .nav-item:hover
+    background-color: rgba(25, 25, 25, 0.05)
+
+/* 1st level arrow down
+
+/*2nd level
+
+/*3rd level
+
+#ts-primary-navigation
+  background-color: #fff
+  font-size: .875rem
+  font-weight: 400
+  padding-bottom: 1rem
+  padding-top: 1rem
+  transition: .3s ease
+  z-index: 999
+
+#ts-secondary-navigation
+  background-color: #f6f6f6
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1)
+  color: #9e9e9e
+  font-size: .75rem
+
+  a
+    color: #9e9e9e
+    display: inline-block
+
+/*-------------------------------------------
+ *  -- Page
+ *-------------------------------------------
+
+.ts-page-wrapper
+  overflow-x: hidden
+
+#ts-main
+  position: relative
+
+  section:not(.ts-block)
+    margin-bottom: 2rem
+
+/* -- Pagination
+
+/*-------------------------------------------
+ *  -- Partners
+ *-------------------------------------------
+
+.ts-partners a
+  display: block
+  padding: .625rem .3125rem
+
+/* -- person
+
+.ts-person
+  .card-body
+    padding: 0
+
+    .ts-item__info
+      padding: 1.5rem
+      background-color: #f6f6f6
+
+    dl
+      padding: .5rem 1.5rem
+
+      dt
+        text-transform: uppercase
+        font-size: .6875rem
+
+      dd
+        color: rgba(0, 0, 0, 0.5)
+
+        a
+          color: rgba(0, 0, 0, 0.5)
+
+    h4
+      font-weight: 500
+      margin-bottom: .25rem
+
+    aside
+      color: rgba(0, 0, 0, 0.5)
+      font-size: .8125rem
+
+  .card-footer
+    background-color: transparent
+
+/*-------------------------------------------
+ *  -- Price Box
+ *-------------------------------------------
+
+/* -- Result
+
+/* ====================================================================================================================
+ *VERTICAL Results
+
+/* ====================================================================================================================
+ *GRID Results
+
+/* ====================================================================================================================
+ *HORIZONTAL Results
+
+/* ====================================================================================================================
+ *Horizontal Results in Map
+
+/* ====================================================================================================================
+ *HORIZONTAL Results Elements
+
+/* ====================================================================================================================
+ *VERTICAL LIST Results
+
+/* -- Ribbon
+
+.ts-ribbon
+  border: 1rem solid #00f
+  border-top: 0 solid
+  border-bottom: 1rem solid rgba(0, 0, 0, 0)
+  color: #fff
+  line-height: 2.5rem
+  position: absolute
+  right: 1rem
+  top: -0.25rem
+  z-index: 2
+  width: 0
+
+  i
+    -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+/* -- Sidebar
+
+/*-------------------------------------------
+ *  -- Slider
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Tabs
+ *-------------------------------------------
+
+/** -- Quick Info
+
+/***********************************************************************************************************************
+ *D. Plugins Styles
+ ***********************************************************************************************************************
+
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+
+.owl-carousel
+  -webkit-tap-highlight-color: transparent
+  position: relative
+
+  .owl-item
+    -webkit-tap-highlight-color: transparent
+    position: relative
+
+  display: none
+  width: 100%
+  z-index: 1
+
+  .owl-stage
+    position: relative
+    -ms-touch-action: pan-Y
+    -moz-backface-visibility: hidden
+
+    &:after
+      content: "."
+      display: block
+      clear: both
+      visibility: hidden
+      line-height: 0
+      height: 0
+
+  .owl-stage-outer
+    position: relative
+    overflow: hidden
+    -webkit-transform: translate3d(0, 0, 0)
+
+  .owl-item
+    -webkit-backface-visibility: hidden
+    -moz-backface-visibility: hidden
+    -ms-backface-visibility: hidden
+    -webkit-transform: translate3d(0, 0, 0)
+    -moz-transform: translate3d(0, 0, 0)
+    -ms-transform: translate3d(0, 0, 0)
+    min-height: .0625rem
+    float: left
+    -webkit-backface-visibility: hidden
+    -webkit-touch-callout: none
+
+  .owl-nav.disabled
+    display: none
+
+  &.owl-loaded
+    display: block
+
+  .owl-dot
+    cursor: pointer
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+  .owl-nav
+    .owl-next, .owl-prev
+      cursor: pointer
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+
+  &.owl-drag .owl-item
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+/* Magnific Popup CSS
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+/* Main image in popup
+
+/* The shadow behind the image
+
+/*-------------------------------------------
+ *  -- Magnific Popup
+ *-------------------------------------------
+
+/* overlay at start
+
+/* overlay animate in
+
+/* overlay animate out
+
+/* content at start
+
+/* content animate it
+
+/* content animate out
+
+/*-------------------------------------------
+ *  -- Owl Carousel
+ *-------------------------------------------
+
+.owl-carousel
+  .owl-stage, .owl-stage-outer, .owl-item
+    height: 100%
+
+  .owl-dots
+    text-align: center
+
+    .owl-dot
+      display: inline-block
+      padding: .3125rem
+
+      &:hover span, &.active span
+        opacity: .7
+
+      span
+        background-color: #191919
+        border-radius: 50%
+        display: inline-block
+        height: .625rem
+        opacity: .2
+        transition: .3s ease
+        width: .625rem
+
+  .owl-nav
+    position: absolute
+    bottom: 4rem
+    height: 0
+    margin: auto
+    width: 100%
+
+    .owl-prev, .owl-next
+      background-color: rgba(255, 255, 255, 0.6)
+      border-radius: 50%
+      box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1)
+      color: #191919
+      display: inline-block
+      height: 2.5rem
+      position: absolute
+      text-align: center
+      transition: .3s ease
+      width: 2.5rem
+
+    .owl-prev:after, .owl-next:after
+      font-family: "Font Awesome\ 5 Free"
+      font-weight: 900
+      font-size: 1.375rem
+      line-height: 2.5rem
+      -webkit-font-smoothing: antialiased
+
+    .owl-prev:hover
+      background-color: rgba(255, 255, 255, 0.8)
+
+    .owl-next
+      &:hover
+        background-color: rgba(255, 255, 255, 0.8)
+
+      right: 1rem
+
+      &:after
+        content: "\f105"
+        margin-left: .1875rem
+
+    .owl-prev
+      left: 1rem
+
+      &:after
+        content: "\f104"
+        margin-right: .0625rem
+
+@media (min-width: 36rem) and (max-width: 47.9375rem)
+  html
+    font-size: 85%
+
+  h1
+    font-size: 1.875rem
+
+  .ts-bokeh-background
+    top: -5rem
+
+@media (min-width: 48rem) and (max-width: 61.9375rem)
+  html
+    font-size: 90%
+
+  h1
+    font-size: 1.75rem
+
+  .ts-homepage h1
+    font-size: 2rem
+
+  .ts-bokeh-background
+    top: -7rem
+
+@media (min-width: 62rem) and (max-width: 74.9375rem)
+  html
+    font-size: 95%
+
+  h1
+    font-size: 1.875rem
+
+  .ts-homepage h1
+    font-size: 3rem
+
+  .ts-block
+    padding-bottom: 3rem
+    padding-top: 3rem
+
+@media (min-width: 75rem)
+  html
+    font-size: 100%
+
+  h1
+    font-size: 2.25rem
+
+  .ts-homepage h1
+    font-size: 4rem
+
+  .ts-block
+    padding-bottom: 4rem
+    padding-top: 4rem
+
+@media (max-width: 35.9375rem)
+  h1
+    margin-bottom: 1.25rem
+
+  .ts-title
+    margin-bottom: 2rem
+
+@media (min-width: 36rem) and (max-width: 61.9375rem)
+  h1
+    margin-bottom: 1.875rem
+
+  .ts-title
+    margin-bottom: 2rem
+
+@media (min-width: 62rem)
+  h1
+    margin-bottom: 2.5rem
+
+  .ts-bokeh-background
+    top: -10rem
+
+  .ts-title
+    margin-bottom: 2rem
+
+@media (min-width: 36rem)
+  .ts-bokeh-background
+    -webkit-filter: blur(2.5rem)
+    filter: blur(2.5rem)
+
+  #ts-footer #ts-footer-secondary .container
+    display: flex
+
+  .owl-carousel .owl-nav
+    bottom: 0
+    top: 0
+
+@media (min-width: 48rem)
+  .navbar.navbar-expand-md ul.navbar-nav
+    margin-top: 0
+
+    .nav-item
+      &:first-child
+        border-top: none
+
+      &:hover
+        background-color: transparent
+
+    > .nav-item
+      border-bottom: none
+
+@media screen and (max-width: 50rem) and (orientation: landscape), screen and (max-height: 18.75rem)
+  /**
+   * * Remove all paddings around the image on small screen

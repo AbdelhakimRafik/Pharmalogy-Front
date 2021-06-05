@@ -1,0 +1,75 @@
+
+extends layouts/_master.pug
+
+block style
+	link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css')
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.0/MarkerCluster.min.css")
+	link(rel='stylesheet' href='assets/css/explore.css')
+	link(rel="stylesheet", href="assets/css/map.custom.css")
+
+block content 
+	//- HERO MAP
+	section#ts-hero.mb-0
+		//- Fullscreen mode
+		.ts-full-screen.ts-has-horizontal-results.w-1001.d-flex1.flex-column1
+			//- MAP
+			.ts-map.ts-shadow__sm
+				//- FORM
+				.ts-form__map-search.ts-z-index__2
+					//- Form
+					form.ts-form
+						//- Collapse button
+						a.ts-center__vertical.justify-content-between(href='.ts-form-collapse' data-toggle='collapse')
+							h5.mb-0 Search Filter
+						//- Form
+						.ts-form-collapse.ts-xs-hide-collapse.collapse.show
+							//- Keyword
+							.form-group.my-2.pt-2
+								input#keyword.form-control(type='text' name='keyword' placeholder='Nom, Adresse, Ville')
+							//- Category
+							select#type.custom-select.my-2(name='category')
+								option(value='') Etat
+								option(value='1') Ouverte
+								option(value='2') En garde
+							//- Status
+							select#status.custom-select.my-2(name='status')
+								option(value='') Ville
+								option(value='1') Marrakech
+								option(value='2') Rabat
+							//- Submit button
+							.form-group.mt-2.mb-3
+								button#search-btn.btn.btn-primary.w-100(type='submit') Rechercher
+
+				#ts-map-hero.h-100.ts-z-index__1
+			
+			//- RESULTS
+			#ts-results.ts-results__horizontal.scrollbar-inner.dragscroll
+				.ts-results-wrapper
+	
+	//- pharmacies template
+	template#pharmacy-template
+		.pharmacy-item.ts-result-link(data-ts-id='4' data-ts-ln='3')
+			a.card.ts-item.ts-card.ts-result
+				.ts-ribbon(title='En gard')
+					i.fas.fa-door-open
+				.card-img.ts-item__image
+				.card-body
+					figure.ts-item__info
+						h4 Traditional Restaurant
+						aside.ph-address
+							i.fa.fa-map-marker.mr-2
+							span
+								| 635 Green Street, Somerset
+					.ts-description-lists
+						.ts-score-container
+							span.ts-score 4.2
+							i.fas.fa-star
+							span.ts-votes-number (3)
+
+
+block script
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.0/leaflet.markercluster.js')
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.73.0/L.Control.Locate.min.js")
+	
+	script(src='assets/js/map.js')

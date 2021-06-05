@@ -1,0 +1,93 @@
+extends layouts/_master
+
+block style
+	link(rel="stylesheet", href="assets/css/contact.css")
+
+block content
+
+	//- enable footer
+	- var footer = true
+
+	main#ts-main(style='margin-top: 50px;')
+		.ts-bokeh-background
+			canvas#ts-canvas
+		//- BREADCRUMB
+		section#breadcrumb
+			.container
+				nav(aria-label='breadcrumb')
+					ol.breadcrumb
+						li.breadcrumb-item
+							a(href='#') Accueil
+						li.breadcrumb-item.active(aria-current='page') Contact
+		//- PAGE TITLE
+		section#page-title
+			.container
+				.ts-title
+					h1 Contactez-nous
+
+		//- CONTACT INFO & FORM
+		section#contact-form
+			.container
+				.row
+					//- CONTACTS (LEFT SIDE)
+					.col-md-4
+						//- Title
+						h3 Prenez contact avec nous
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor sapien.
+							| In lobortis posuere tincidunt.
+						//- Phone
+						figure.ts-center__vertical
+							i.fa.fa-phone.ts-opacity__50.mr-3.mb-0.h4.font-weight-bold
+							dl.mb-0
+								dt Phone
+								dd.ts-opacity__50 +212 5 24 45 36 59
+						//- Email
+						figure.ts-center__vertical
+							i.fa.fa-envelope.ts-opacity__50.mr-3.mb-0.h4.font-weight-bold
+							dl.mb-0
+								dt Email
+								dd.ts-opacity__50
+									a(href='#') contact@pharmalogy.net
+						//- Skype
+						figure.ts-center__vertical
+							i.fab.fa-skype.ts-opacity__50.mr-3.mb-0.h4.font-weight-bold
+							dl.mb-0
+								dt Skype
+								dd.ts-opacity__50
+									a(href='#') pharmalogy
+					//- FORM (RIGHT SIDE)
+					.col-md-8
+						//- Title
+						h3 Formulaire de contact
+						//- Form
+						form#form-contact.clearfix.ts-form.ts-form-email(method='post' data-php-path='assets/php/email.php')
+							//- Row
+							.row
+								//- Name
+								.col-md-6.col-sm-6
+									.form-group
+										label(for='form-contact-name') Name *
+										input#form-contact-name.form-control(type='text' name='name' placeholder='Votre nom' required='')
+								//- Email
+								.col-md-6.col-sm-6
+									.form-group
+										label(for='form-contact-email') Email *
+										input#form-contact-email.form-control(type='email' name='email' placeholder='Votre e-mail' required='')
+							//- end row
+							//- Subject
+							.form-group
+								label(for='form-contact-email') Subject*
+								input#form-contact-subject.form-control(type='text' name='subject' placeholder='Sujet' required='')
+							//- Message
+							.form-group
+								label(for='form-contact-message') Message *
+								textarea#form-contact-message.form-control(rows='5' name='message' placeholder='Votre message' required='')
+							//- Submit button
+							.form-group.clearfix
+								button#form-contact-submit.btn.btn-primary.float-right(type='Envoyer')
+									.status
+										i.fas.fa-circle-notch.fa-spin.spinner
+									span
+										| Envoyer
+							.form-contact-status

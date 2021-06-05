@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700")
+
+/*----------------------------------------------------------------------------------------------------------------------
+ *Project:	    MyHouse
+ *Version:        1.0.1
+ *
+ *Default Color   #00f;
+ *
+ *Body copy:		'Roboto', sans-serif; 14px;
+ *Headers:		'Roboto', sans-serif;
+ *
+ *----------------------------------------------------------------------------------------------------------------------
+/*----------------------------------------------------------------------------------------------------------------------
+ *[Table of contents]
+ *
+ *A. Basic Styling
+ *  -- Styling
+ *
+ *B. Helpers
+ *
+ *  -- Animations
+ *  -- Borders
+ *  -- Center
+ *  -- Colors
+ *  -- Column-count
+ *  -- Background
+ *  -- File-upload
+ *  -- Height
+ *  -- No gutters
+ *  -- Opacity
+ *  -- Overflow
+ *  -- Position
+ *  -- Shadow
+ *  -- Typography
+ *  -- Title
+ *  -- Transitions
+ *  -- Utilities
+ *  -- Z-index
+ *
+ *C. Components
+ *
+ *  -- Badge
+ *  -- Block
+ *  -- Blockquote
+ *  -- Box
+ *  -- Buttons
+ *  -- Breadcrumb
+ *  -- Card
+ *  -- Carousel
+ *  -- Circle
+ *  -- Collapse
+ *  -- Description-list
+ *  -- Dropdown
+ *  -- Faq
+ *  -- Feature
+ *  -- Forms
+ *  -- Footer
+ *  -- Hr
+ *  -- Inputs
+ *  -- Item
+ *  -- List
+ *  -- Main
+ *  -- Map
+ *  -- Hero
+ *  -- Navbar
+ *  -- Page
+ *  -- Pagination
+ *  -- Partners
+ *  -- Person
+ *  -- Price-box
+ *  -- Result
+ *  -- Ribbon
+ *  -- Sidebar
+ *  -- Slider
+ *  -- Tabs
+ *  -- Quick-info
+ *
+ *D. Plugins Styles
+ *  -- Magnific Popup
+ *  -- Owl Carousel
+ *
+ *----------------------------------------------------------------------------------------------------------------------
+/***********************************************************************************************************************
+ *A. Basic Styling
+ ***********************************************************************************************************************
+/*-------------------------------------------
+ *  -- Styling - Colors, Font Size, Font Family
+ *-------------------------------------------
+
+body
+  background-color: #f6f6f6
+  color: #191919
+  font-family: 'Roboto', sans-serif
+  font-weight: 400
+  font-size: .9375rem
+  margin: 0
+  padding: 0
+
+html
+  font-size: 95%
+
+/***********************************************************************************************************************
+ *B. Helpers
+ ***********************************************************************************************************************
+/* -- Animations
+/*-------------------------------------------
+ *  -- Borders
+ *-------------------------------------------
+/* Center Align with Flex
+
+/* Bootstrap primary colors
+/*-------------------------------------------
+ *  -- Background
+ *-------------------------------------------
+
+header
+  opacity: 1
+
+/* -- File Upload
+/*-------------------------------------------
+ *  -- Height
+ *-------------------------------------------
+/* SM
+/*MD
+/*LG
+/*XL
+/*-------------------------------------------
+ *  -- No Gutters - Removes padding from col*
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Opacity
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Overflow
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Position
+ *-------------------------------------------
+/* Top
+/* Right
+/* Bottom
+/* Left
+/*-------------------------------------------
+ *  -- Shadow
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Typography
+ *-------------------------------------------
+
+a
+  color: #191919
+  transition: .3s ease
+  outline: none
+
+  &:hover
+    color: #00f
+    text-decoration: none
+
+button
+  outline: none !important
+  cursor: pointer
+
+/*-------------------------------------------
+ *  -- Title
+ *-------------------------------------------
+/*
+ *margin-bottom: 3rem ?if media (min-width: 576px) and (max-width: 991px);
+ *margin-bottom: 4rem ?if media (min-width: 992px);
+/*-------------------------------------------
+ *  -- Utilities
+ *-------------------------------------------
+/* Social Icons
+/* Overlay
+/* Flip x
+/* Flip Y
+
+/*-------------------------------------------
+ *  -- Z-index
+ *-------------------------------------------
+
+/***********************************************************************************************************************
+ *C. Components
+ ***********************************************************************************************************************
+/* -- Badge
+/*-------------------------------------------
+ *  -- Block
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Blockquote
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Box
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Buttons
+ *-------------------------------------------
+
+.btn-primary:not(:disabled):not(.disabled)
+  &:active:focus, &.active:focus
+    background-color: #0000cc
+    border-color: #0000b3
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2)
+
+  &:active, &.active
+    background-color: #0000cc
+    border-color: #0000cc
+    box-shadow: 0 0.1875rem 0.9375rem rgba(0, 0, 0, 0.2)
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus
+  background-color: #00f
+  border-color: #00f
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.5)
+
+/* -- Breadcrumb
+/*-------------------------------------------
+ *  -- Card
+ *-------------------------------------------
+
+/*-------------------------------------------
+ *  -- Circle
+ *-------------------------------------------
+/* -- Collapse
+/* -- Description List
+
+/* -- Dropdown
+/* -- FAQ
+/*-------------------------------------------
+ *  -- Forms
+ *-------------------------------------------
+
+/* -- Footer
+/*-------------------------------------------
+ *  -- HR
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Inputs
+ *-------------------------------------------
+/* -- Item
+
+@-moz-document url-prefix()
+
+/*-------------------------------------------
+ *  -- List
+ *-------------------------------------------
+
+ul
+  line-height: 2.625rem
+
+/* -- Main Content
+/*-------------------------------------------
+ *  -- Map
+ *-------------------------------------------
+
+/* =====================================================================================================================
+ *MARKER
+/* =====================================================================================================================
+ *INFOBOX
+
+/*-------------------------------------------
+ *  -- Hero
+ *-------------------------------------------
+
+/* Hero slider height
+/*-------------------------------------------
+ *  -- Navbar
+ *-------------------------------------------
+
+#ts-header
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1)
+
+  &:not(.fixed-top)
+    z-index: 3
+    position: relative
+
+  .social-medias a
+    margin: 0 5px
+
+    i
+      font-size: 15px
+
+    &:hover
+      color: #2981cb
+
+/*1st level
+
+ul.navbar-nav
+  margin-top: .5rem
+
+  .nav-item
+    position: relative
+    border-bottom: 0.0625rem solid rgba(25, 25, 25, 0.1)
+    transition: .3s ease
+
+  .nav-link
+    color: rgba(25, 25, 25, 0.5)
+
+    &:hover
+      color: rgba(25, 25, 25, 0.8)
+
+  > .nav-item
+    .nav-link
+      padding-left: .5rem
+      padding-bottom: 0
+      padding-top: 0
+
+    > .nav-link
+      margin-right: .5rem
+
+  .nav-item:hover
+    background-color: rgba(25, 25, 25, 0.05)
+
+/* 1st level arrow down
+/*2nd level
+/*3rd level
+
+#ts-primary-navigation
+  background-color: #fff
+  font-size: .875rem
+  font-weight: 400
+  padding-bottom: 1rem
+  padding-top: 1rem
+  transition: .3s ease
+  z-index: 999
+
+#ts-secondary-navigation
+  background-color: #f6f6f6
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1)
+  color: #9e9e9e
+  height: 38px
+  font-size: .75rem
+
+  a
+    color: #9e9e9e
+    display: inline-block
+
+/*-------------------------------------------
+ *  -- Page
+ *-------------------------------------------
+
+.ts-page-wrapper
+  overflow-x: hidden
+
+/* -- Pagination
+/*-------------------------------------------
+ *  -- Partners
+ *-------------------------------------------
+/* -- person
+/*-------------------------------------------
+ *  -- Price Box
+ *-------------------------------------------
+/* -- Result
+
+/* ====================================================================================================================
+ *VERTICAL Results
+/* ====================================================================================================================
+ *GRID Results
+/* ====================================================================================================================
+ *HORIZONTAL Results
+
+/* ====================================================================================================================
+ *Horizontal Results in Map
+/* ====================================================================================================================
+ *HORIZONTAL Results Elements
+/* ====================================================================================================================
+ *VERTICAL LIST Results
+
+/* -- Ribbon
+
+/* -- Sidebar
+/*-------------------------------------------
+ *  -- Slider
+ *-------------------------------------------
+/*-------------------------------------------
+ *  -- Tabs
+ *-------------------------------------------
+/** -- Quick Info
+/***********************************************************************************************************************
+ *D. Plugins Styles
+ ***********************************************************************************************************************
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+/* Magnific Popup CSS
+
+button::-moz-focus-inner
+  padding: 0
+  border: 0
+
+/* Main image in popup
+/* The shadow behind the image
+/*-------------------------------------------
+ *  -- Magnific Popup
+ *-------------------------------------------
+/* overlay at start
+/* overlay animate in
+/* overlay animate out
+/* content at start
+/* content animate it
+/* content animate out
+/*-------------------------------------------
+ *  -- Owl Carousel
+ *-------------------------------------------
+@media (min-width: 36rem) and (max-width: 47.9375rem)
+  html
+    font-size: 85%
+
+@media (min-width: 48rem) and (max-width: 61.9375rem)
+  html
+    font-size: 90%
+
+@media (min-width: 62rem) and (max-width: 74.9375rem)
+  html
+    font-size: 95%
+
+@media (min-width: 75rem)
+  html
+    font-size: 100%
+
+@media (min-width: 48rem)
+  .navbar.navbar-expand-md ul.navbar-nav
+    margin-top: 0
+
+    .nav-item
+      &:first-child
+        border-top: none
+
+      &:hover
+        background-color: transparent
+
+    > .nav-item
+      border-bottom: none
+
+@media screen and (max-width: 50rem) and (orientation: landscape), screen and (max-height: 18.75rem)
+  /**
+   * * Remove all paddings around the image on small screen

@@ -1,0 +1,138 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+		meta(name='author' content='ThemeStarz')
+		//- CSS
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/all.css')
+		link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.css')
+		link(rel="stylesheet", href="assets/css/main.css")
+
+		block style
+
+		title Pharmalogy
+	body
+		#page-top.ts-page-wrapper.ts-homepage
+			header#ts-header
+				nav#ts-secondary-navigation.navbar.p-0
+					.container.justify-content-end.justify-content-sm-between
+						//- Left Side
+						.navbar-nav.d-none.d-sm-block
+							//- Phone
+							span.mr-4
+								i.fa.fa-phone-square.mr-1
+								|  +212 5 24 45 36 59
+							//- Email
+							a(href='#')
+								i.fa.fa-envelope.mr-1
+								|  contact@pharmalogy.net
+						//- Right Side
+						.navbar-nav.flex-row
+							.social-medias
+								//- social media
+								a(href="#") 
+									i.fab.fa-facebook-f
+								a(href="#") 
+									i.fab.fa-instagram
+								a(href="#") 
+									i.fab.fa-twitter
+						//- end navbar-nav
+						//- end container
+				nav#ts-primary-navigation.navbar.navbar-expand-md.navbar-light
+					.container
+						//- Brand Logo
+						a.navbar-brand(href='#')
+							img(src='assets/img/logo.png' alt='')
+						//- Responsive Collapse Button
+						button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarPrimary' aria-controls='navbarPrimary' aria-expanded='false' aria-label='Toggle navigation')
+							span.navbar-toggler-icon
+						//- Collapsing Navigation
+						#navbarPrimary.collapse.navbar-collapse
+							ul.navbar-nav
+								li.nav-item
+									a.nav-link(href='explore.html') Accueil
+								li.nav-item
+									a.nav-link(href='aboutus.html') À propos de nous
+								li.nav-item
+									a.nav-link.mr-2(href='contact.html') Contact
+							ul.navbar-nav.ml-auto
+								li.nav-item
+									a.nav-link(href='#') S'identifier / Register
+								//- li.nav-item
+								//- 	a.btn.btn-outline-primary.btn-sm.m-1.px-3(href='submit.html')
+								//- 		i.fa.fa-plus.small.mr-2
+								//- 		|  Add Property
+			
+			block content
+
+			if(footer)
+				footer#ts-footer
+					//- MAIN FOOTER CONTENT
+					section#ts-footer-main
+						.container
+							.row
+								//- Brand and description
+								.col-md-6
+									a.brand(href='#')
+										img(src='assets/img/logo.png' alt='')
+									p.mb-4
+										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor sapien.
+										| In lobortis posuere tincidunt. Curabitur malesuada tempus ligula nec maximus. Nam tortor
+										| arcu,
+										| tincidunt quis molestie non, sagittis dignissim ligula. Fusce est ipsum, pharetra in felis
+										| ac,
+										| lobortis volutpat diam.
+									a.btn.btn-outline-dark.mb-4(href='#') Contactez-nous
+								//- Navigation
+								.col-md-2
+									h4 Navigation
+									nav.nav.flex-row.flex-md-column.mb-4
+										a.nav-link(href='#') Accueil 
+										a.nav-link(href='#') À propos de nous
+										a.nav-link(href='#') Contact
+								//- Contact Info
+								.col-md-4
+									h4 Contact
+									address.ts-text-color-light
+										| 70, Guelize Marrakech
+										br
+										strong Email: 
+										a.btn-link(href='#') contact@pharmalogy.net
+										br
+										strong Phone:
+										| +212 5 24 45 36 59
+										br
+										strong Skype: 
+										| pharmalogy
+							//- SECONDARY FOOTER CONTENT
+							section#ts-footer-secondary
+								.container
+									//- Copyright
+									.ts-copyright (C) 2021 Pharmalogy.net, Tous les droits sont réservés
+									//- Social Icons
+									.ts-footer-nav
+										nav.nav
+											a.nav-link(href='#')
+												i.fab.fa-facebook-f
+											a.nav-link(href='#')
+												i.fab.fa-twitter
+											a.nav-link(href='#')
+												i.fab.fa-pinterest-p
+											a.nav-link(href='#')
+												i.fab.fa-youtube
+
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js')
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js')
+ 
+
+		script(src='assets/js/custom.js')
+
+		block script
